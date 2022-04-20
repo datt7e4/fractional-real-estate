@@ -7,7 +7,9 @@ import axios from "axios";
 // export const updatePost = (id, updatePost) => axios.patch(`${url}/${id}`, updatePost);
 // export const deletePost = (id) => axios.delete(`${url}/${id}`);
 
-const API = axios.create({ baseURL: "https://fractional-real-estate.herokuapp.com/" });
+const API = axios.create({
+  baseURL: "https://fractional-real-estate.herokuapp.com",
+});
 
 //required for middleware
 API.interceptors.request.use((req) => {
